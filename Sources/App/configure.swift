@@ -12,6 +12,8 @@ public func configure(_ app: Application) throws {
     
     app.migrations.add(CreateMovie())
     app.migrations.add(CreateReview())
+    app.migrations.add(CreateActor())
+    app.migrations.add(CreateMovieActor())
 
     // register routes
     try routes(app)
